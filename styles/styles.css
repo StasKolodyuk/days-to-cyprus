@@ -1,0 +1,30 @@
+body {
+	background-color: #16a085;
+	background: url(https://pp.vk.me/c626724/v626724783/1f21c/vIAFK-mfRwA.jpg) no-repeat center center fixed;
+	/*background: url(https://pp.vk.me/c628622/v628622933/2677f/9jO98360bjo.jpg) no-repeat center center fixed;
+	background: url(https://pp.vk.me/c628622/v628622933/269f1/l5L78YN_apw.jpg) no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.centered {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.label {
+    font-family: Oswald;
+	font-size: 72px;
+	color: #ffffff;
+	line-height: 150px;
+	margin: 0px;
+}
+.big {
+	font-size: 200px;
+}
