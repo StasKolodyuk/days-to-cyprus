@@ -1,3 +1,5 @@
+var isVacation = false;
+
 var topWords = [
 	"Привет - Я",
 	"Вы танцуете? - Есис хоревете?",
@@ -10,11 +12,16 @@ function daysToCyprus() {
 	var cyprusDate = new Date(2016, 08, 05);
 	var today = new Date();
 
-	return Math.round(Math.abs((cyprusDate.getTime() - today.getTime())/(oneDay)));
+	if(today.getTime() > cyprusDate.getTime()) {
+			isVacation = true;
+	}
+
+	return Math.ceil(Math.abs((cyprusDate.getTime() - today.getTime())/(oneDay)));
 }
 
 (function appendDays() {
 	document.getElementById('days').innerHTML = daysToCyprus();
+	document.getElementById('days_label').innerHTML = isVacation ? 'Days in Cyprus' : 'Days to Cyprus';
 }) ();
 
 (function appendWord() {
